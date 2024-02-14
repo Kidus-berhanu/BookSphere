@@ -1,0 +1,12 @@
+
+
+<div class="wishlistlist" *ngIf="showWishlist">
+    <p>FavBookslist</p>
+    <div class="line" *ngFor="let item of wishlist">
+        <p class="cancle" (click)="handleDelete(item)"> X </p>
+    <p>
+        {{item}}
+    </p>
+    </div>
+
+</div>

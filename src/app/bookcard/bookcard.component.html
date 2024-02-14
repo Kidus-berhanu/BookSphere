@@ -1,0 +1,13 @@
+<!-- Add a container for the grid -->
+<div class="book-grid">
+  <!-- Repeat this structure for each book; assumed to be part of an *ngFor loop or similar -->
+  <main (click)="handleOnClick()">
+    <img [src]="book?.imglink" alt="">
+    <div>
+      <p>{{book?.title}}</p>
+      <p>{{book?.author}}</p>
+      <p>{{book?.publisher}}</p>
+      <p>{{book?.publishdate}}</p>
+    </div>
+  </main>
+</div>

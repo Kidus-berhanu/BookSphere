@@ -1,0 +1,87 @@
+// Define base colors for the application
+$primary-color: #007bff; // Example blue, adjust per brand
+$secondary-color: #6c757d; // Example gray, adjust per brand
+$light-background: #f8f9fa;
+$dark-text: #343a40;
+$light-text: #ffffff;
+
+// Base typography
+$base-font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$heading-font-weight: 600;
+$body-font-weight: 400;
+
+// Spacing
+$section-padding: 40px;
+
+main {
+  font-family: $base-font-family;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .hero-section {
+    background-color: $primary-color;
+    color: $light-text;
+    text-align: center;
+    padding: $section-padding 0;
+
+    h1 {
+      font-weight: $heading-font-weight;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-weight: $body-font-weight;
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  section {
+    padding: $section-padding 0;
+
+    h2 {
+      font-weight: $heading-font-weight;
+      color: $dark-text;
+      margin-bottom: 20px;
+    }
+  }
+
+  .wishlist-section,
+  .wishlistlist-section {
+    background-color: $light-background;
+  }
+
+  .booklist-section {
+    background-color: #ffffff;
+  }
+
+  // Add responsive design breakpoints
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .container {
+      padding: 0 10px;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+  }
+}
+
+// Custom component styling (assuming these will be enhanced further)
+app-search-input,
+app-wishlist,
+app-wishlistlist,
+app-booklist {
+  display: block;
+  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
+}

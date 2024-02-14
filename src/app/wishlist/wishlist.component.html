@@ -1,0 +1,8 @@
+<button type="button" (click)="handleOnClick()">Show Wishlist</button>
+
+<div *ngIf="showWishlist">
+  <ul>
+    <li *ngFor="let item of wishlistItems">{{ item.name }}</li>
+
+  </ul>
+</div>

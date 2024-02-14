@@ -1,0 +1,6 @@
+<!-- Apply the 'book-grid' class to the container that wraps the *ngFor directive -->
+<div class="book-grid">
+  <div *ngFor="let book of booklist">
+    <app-bookcard [book]="book"></app-bookcard>
+  </div>
+</div>
